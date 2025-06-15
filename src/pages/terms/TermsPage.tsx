@@ -11,6 +11,7 @@ import {
   TableWrapper,
   StyledTable
 } from './TermsPage.styles'
+import MarketingTermsPage from './MarketingTermsPage'
 
 const serviceTerms = (
   <>
@@ -206,6 +207,8 @@ const TermsPage = () => {
         return serviceTerms
       case 'privacy':
         return privacyTerms
+      case 'marketing':
+        return <MarketingTermsPage />
       default:
         return <Content>잘못된 접근입니다.</Content>
     }
